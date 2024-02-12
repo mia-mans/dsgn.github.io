@@ -1,10 +1,16 @@
 body {
-    background-color: #A7333F;
+    background-color: #d61e30;
 }
 
 #headtext {
     text-align: left;
     margin-left: 5%;
-    /* font-family: 'Times New Roman', Times, serif; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+    margin-top: 5%;
+    font-size: larger;
+    color:aliceblue;
+}
+
+#table {
+    
 }
