@@ -1,16 +1,140 @@
 body {
-    background-color: #d61e30;
+    background-color: #dce4f3;
+}
+section {
+    padding-top: 0vw;
+  }
+
+a {
+    text-align: center;
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    color:rgb(0, 0, 0);
 }
 
 #headtext {
-    text-align: left;
-    margin-left: 5%;
+    text-align: center;
     font-family: 'Lora', 'Times New Roman', Times, serif;
-    margin-top: 5%;
-    font-size: larger;
-    color:aliceblue;
+    /* margin-top: 2%; */
+    font-size: 3vw;
+    font-weight: 400;
+    color:rgb(0, 0, 0);
 }
 
-#table {
-    
+/* --------------------------- */
+/* -----------TABLE----------- */
+/* --------------------------- */
+
+.gridwrapper {
+    width: 80vw;
+    height: 50vh;
+    min-height: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;}
+
+.gridwrapper div a img {
+    width: 100%;
 }
+
+.gridwrapper .foodpic {
+    margin: auto;
+    margin-right: 3vw;
+    display: flex;
+    width: 15%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
+    }
+
+.gridwrapper .foodpic a p{
+    /* width:10vw; */
+    /* justify-content: center; */
+    font-size: medium;
+    /* text-align: center;    */
+    visibility: hidden;
+    opacity: 0;
+    /* visibility: visible; */
+    /* opacity: 1; */
+    }
+
+
+.foodpic:hover a p{
+    visibility: visible;
+    opacity: 1;
+}
+
+.foodpic:hover img{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+/* --------------------------- */
+/* ------FOOD FORMATTING------ */
+/* --------------------------- */
+
+
+/* --------------------------- */
+/* --------BIG THANOS--------- */
+/* --------------------------- */
+
+#mainpic{
+    position: relative;
+    left: 35vw;
+    width: 30vw;
+    height: 30vw;
+}
+
+#angry{
+    position: absolute;
+    left: 25vw;
+    width: 30vw;
+    height: 30vw;
+    animation: shake 0.5s infinite;
+}
+
+#sleepy{
+    position: relative;
+    left: 23vw;
+    width: 30vw;
+    height: 30vw;
+}
+
+/* @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-4px, 0px) rotate(1deg); }
+    30% { transform: translate(4px, 3px) rotate(0deg); }
+    40% { transform: translate(2px, -2px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 2px) rotate(-1deg); }
+    80% { transform: translate(-2px, -2px) rotate(1deg); }
+    90% { transform: translate(2px, 3px) rotate(0deg); }
+    100% { transform: translate(2px, -3px) rotate(-1deg); }
+} */
+@keyframes shake {
+    0% { transform: translate(1vi, 1vi) rotate(0deg); }
+    10% { transform: translate(-1vi, -2vi) rotate(-1deg); }
+    20% { transform: translate(-4vi, 0vi) rotate(1deg); }
+    30% { transform: translate(4vi, vix) rotate(0deg); }
+    40% { transform: translate(2vi, -2vi) rotate(1deg); }
+    50% { transform: translate(-1vi, 2vi) rotate(-1deg); }
+    60% { transform: translate(-3vi, 1vi) rotate(0deg); }
+    70% { transform: translate(3vi, 2vi) rotate(-1deg); }
+    80% { transform: translate(-2vi, -2vi) rotate(1deg); }
+    90% { transform: translate(2vi, 3vi) rotate(0deg); }
+    100% { transform: translate(2vi, -3vi) rotate(-1deg); }
+}
+
+
