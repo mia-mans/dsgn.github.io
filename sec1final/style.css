@@ -108,6 +108,7 @@ h1{
     position: relative;
     left: 25vw;
     width: 30vw;
+    top: -10vh;
     height: 30vw;
     animation: shake 0.5s infinite;
 }
