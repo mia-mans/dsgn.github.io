@@ -115,7 +115,7 @@ h1{
     position: relative;
     left: 25vw;
     width: 50vw;
-    top: -10vh;
+    top: -5vh;
     height: 50vw;
     animation: shake 0.5s infinite;
     text-align: center;
