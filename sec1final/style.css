@@ -7,25 +7,31 @@ section {
 
 a {
     text-align: center;
-    font-family: 'Lora', 'Times New Roman', Times, serif;
+    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
     color:rgb(0, 0, 0);
+    font-weight: 300;
     text-decoration: none;
 }
 
 h3{
     text-align: center;
-    font-family: 'Lora', 'Times New Roman', Times, serif;
-    font-size: 2vw;
+    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+    font-size: 4vw;
+    margin-top:-0.8vh;
+    font-weight: 300;
     color:rgb(0, 0, 0);
+    margin-bottom: -1vi;
 }
 
 h1{
     text-align: center;
-    font-family: 'Lora', 'Times New Roman', Times, serif;
-    font-size: 4vi;
+    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+    font-size: 6vi;
+    font-weight: 300;
     color:rgb(0, 0, 0);
     margin-bottom: -1vi;
 }
+
 
 .spacer{
     height: 5vh;
@@ -36,7 +42,7 @@ h1{
 /* --------------------------- */
 
 .foodwrapper {
-    margin-top: 60vh;
+    margin-top: 10vh;
 }
 
 .gridwrapper {
@@ -45,8 +51,7 @@ h1{
     min-height: none;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 40vh;}
+    flex-direction: row;}
 
 .gridwrapper div a img {
     width: 100%;
@@ -61,15 +66,16 @@ h1{
     align-items: center;
     justify-content: center;
     align-self: end;
+    text-align: center;
     }
 
 .gridwrapper .foodpic a p{
     position:relative;
     bottom: 8vh;
     justify-content: center;
-    font-size: 2vw;
+    font-size:2.5vw;
     visibility: hidden;
-    opacity: 0;
+    text-align: center;
     }
 
 
@@ -96,28 +102,39 @@ h1{
 #mainpic{
     position: relative;
     left: 35vw;
-    width: 30vw;
-    height: 10vh;
+    width: 25vw;
+    height: 40vh;
+    text-align: center;
 }
 
 #mainpic img{
-    width:70%
+    height:90%;
 }
 
 #angry{
     position: relative;
     left: 25vw;
-    width: 30vw;
+    width: 50vw;
     top: -10vh;
-    height: 30vw;
+    height: 50vw;
     animation: shake 0.5s infinite;
+    text-align: center;
+}
+
+#angry img{
+    width: 100%;
 }
 
 #sleepy{
     position: relative;
-    left: 23vw;
-    width: 30vw;
-    height: 30vw;
+    left: 10vw;
+    width: 80vw;
+    height: 50vw;
+    text-align: center;
+}
+
+#sleepy img{
+    width:100%
 }
 
 
@@ -141,20 +158,122 @@ h1{
 /* --------------------------- */
 
 #churucat{
-    animation: spin 1.5s linear infinite;
+    animation: spin 1s linear infinite;
     position:absolute;
-    top: 20vh;
+    top: 30vh;
     left: 30vw;
-    width: 40vw;
-    height: 60vh;
-    background-color: white;
+    width: 50vw;
+    height: 50vh;
+    z-index: 2;
 }
 
 #churucat img{
-    width: 100%
+    width: 100%;
+    
+}
+
+#churubaby1{
+    animation: bounce 0.5s linear infinite;
+    position:absolute;
+    top: 5vh;
+    left: 5vw;
+    width: 30vw;
+    height: 30vh;
+    z-index: 2;
+}
+#churubaby1 img{
+    width: 80%
+}
+
+#churubaby2{
+    animation: bounce 0.5s linear infinite;
+    position:absolute;
+    bottom: 5vh;
+    right: 5vw;
+    width: 30vw;
+    height: 30vh;
+    z-index: 2;
+    text-align: center;
+}
+
+#churubaby2 img{
+    width: 80%
+}
+
+#churubaby3{
+    animation: bounce 0.5s linear infinite;
+    position:absolute;
+    top: 5vh;
+    right: 5vw;
+    width: 30vw;
+    height: 30vh;
+    z-index: 2;
+}
+
+#churubaby3 img{
+    width: 80%
+}
+
+#churubaby4{
+    animation: bounce 0.5s linear infinite;
+    position:absolute;
+    bottom: 5vh;
+    left: 5vw;
+    width: 30vw;
+    height: 30vh;
+    z-index: 2;
+}
+
+#churubaby4 img{
+    width: 80%
+}
+
+.churutext {
+    position: absolute;
+    text-align: center;
+    left: 32vw;
+    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+    color: white;
+    font-size: 10vh; 
+    padding: 0px;
+    z-index: 1;
+}
+
+.churubackground {
+    background-image: url('images/big.png');
+    background-repeat: repeat;
+    background-size: 10%; 
+    background-position: center center; 
+    margin: 0;
+    overflow: hidden;
+}
+
+.churuoverlay{
+    width:100vw;
+    height:150vh;
+    opacity: 0.5;
+    animation: rainbows 5s infinite;
+}
+
+@keyframes rainbows{
+    0%   {background-color: red;}
+    20%  {background-color: orange;}
+    40%  {background-color: yellow;}
+    60%  {background-color: green;}
+    80%  {background-color: blue;}
+    99%  {background-color: purple;}
+    100% {background-color: red;}
 }
 
 @keyframes spin{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+@keyframes bounce{
+    0% { scale: 0.8; }
+    50% { scale: 1.2; }
+    100% { scale: 0.8; }
+}
+
+
