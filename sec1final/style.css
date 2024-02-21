@@ -178,7 +178,7 @@ h1{
     top: 5vh;
     left: 5vw;
     width: 30vw;
-    height: 30vh;
+    height: 50vh;
     z-index: 2;
 }
 #churubaby1 img{
@@ -191,7 +191,7 @@ h1{
     bottom: 5vh;
     right: 5vw;
     width: 30vw;
-    height: 30vh;
+    height: 50vh;
     z-index: 2;
     text-align: center;
 }
@@ -206,7 +206,7 @@ h1{
     top: 5vh;
     right: 5vw;
     width: 30vw;
-    height: 30vh;
+    height: 50vh;
     z-index: 2;
 }
 
@@ -220,7 +220,7 @@ h1{
     bottom: 5vh;
     left: 5vw;
     width: 30vw;
-    height: 30vh;
+    height: 50vh;
     z-index: 2;
 }
 
@@ -236,6 +236,17 @@ h1{
     color: white;
     font-size: 10vh; 
     padding: 0px;
+    z-index: 1;
+}
+
+.churutextsmall {
+    position: absolute;
+    text-align: center;
+    left: 15vw;
+    bottom: 0vw;
+    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+    color: white;
+    font-size: 5vh; 
     z-index: 1;
 }
 
@@ -277,3 +288,18 @@ h1{
 }
 
 
+/* --------------------------- */
+/* -------WEBRING LINK-------- */
+/* --------------------------- */
+
+.webring {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    left: 1vw;
+    top: 1vw;
+}
+
+.webring img{
+    width: 100%;
+}
