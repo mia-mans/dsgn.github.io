@@ -1,12 +1,157 @@
-body{
-    background-color: #0E103D;
+
+#contentwrapper{
+    height: 100vh;
+    width:102vw;
+    margin-top: -2vh;
+    margin-left: -2vh;
+}
+
+/* --------------------------- */
+/* ---------NIGHT MODE-------- */
+/* --------------------------- */
+#nightmode{
+    background-color:#19183c;
+    position: absolute;
+    height: 100vh;
+    width:102vw;
+    margin-top: -2vh;
+    margin-left: -2vh;
+    z-index:40;
+}
+
+/* --------------------------- */
+/* ---------LIGHT MODE-------- */
+/* --------------------------- */
+#lightmode{
+    background-color:#b7ddec;
+    position: absolute;
+    height: 100vh;
+    width:102vw;
+    margin-top: -2vh;
+    margin-left: -2vh;
+    z-index:50;
+    opacity:0;
+}
+
+#lightmode:target{
+    opacity:1;
+}
+
+/* --------------------------- */
+/* ---------SETTING BAR------- */
+/* --------------------------- */
+#settings {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height:15vh;
+    z-index: 100;
+  }
+  
+
+/* --------------------------- */
+/* --------ICON STYLING------- */
+/* --------------------------- */
+#lightmodeicon{
+    background-image:url(images/color_mode.png);
+    position: absolute;
+    top: 1vh;
+    right: 11vw;
+    width: 10vw;
+    height: 10vh;  
+    background-size: 100% 200%;
+    overflow: hidden;
+    background-position: 0% 0%;
+}
+
+#darkmodeicon{
+    background-image:url(images/color_mode.png);
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    width: 10vw;
+    height: 10vh;  
+    background-size: 100% 200%;
+    overflow: hidden;
+    background-position: 0% 100%;
+}
+
+
+#soundmode{
+    position: absolute;
+    top: 1vh;
+    right: 21vw;
+    width: 10vw;
+    height: 10vh;  
+}
+
+#soundmodeslash{
+    position: absolute;
+    top: 5.3vh;
+    right: 22vw;
+    transform: rotate(-45deg);
+    width: 8vw;
+    height: 0.4vh;
+    border-radius:20%;
+    background-color: white;  
+    opacity:0;
+}
+
+#animationmode{
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    width: 10vw;
+    height: 10vh;  
+    background-color: purple;
+}
+
+.icon img{
+    width: 100%
+}
+
+input{
+    display: none;
+}
+
+/* --------------------------- */
+/* -------ICON FEEDBACK------- */
+/* --------------------------- */
+
+ #soundtoggle:checked ~ #soundmodeslash{
+    opacity: 1;
+
 }
 
 
 
+/* input {
+    display: none;
+  } */
 
+/* --------------------------- */
+/* ------------TEXT----------- */
+/* --------------------------- */
 
-
-#titletext{
-    
+.titletext{
+    position: absolute;
+    top: calc(50vh - 5vh);
+    left: calc(50vw - 25vw);
+    width: 50vw;
+    height: 10vh;  
 }
+
+.titletext p{
+    animation: wobble 5s infinite;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 8vw;
+    font-weight: 300;
+    color:white;
+}
+
+@keyframes wobble {
+    0%, 100%  {transform: translateY(-1vh)}
+    50%  {transform: translateY(1vh)}
+  }
