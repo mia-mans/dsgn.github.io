@@ -151,7 +151,42 @@ input{
     color:white;
 }
 
+.sentences_fast{
+    font-size: 5vw;
+    font-weight: 200;
+    color:white;
+    animation: drift 3s infinite;
+    animation-delay: 250ms;
+}
+
+.sentences_med{
+    font-size: 5vw;
+    font-weight: 200;
+    color:white;
+    animation: drift 4s infinite;
+    animation-delay: ms;
+}
+
+
+.sentences_slow{
+    font-size: 5vw;
+    font-weight: 200;
+    color:white;
+    animation: drift 5s infinite;
+    animation-delay: 500ms;
+}
+
 @keyframes wobble {
     0%, 100%  {transform: translateY(-1vh)}
     50%  {transform: translateY(1vh)}
   }
+
+@keyframes drift{
+    0% {transform: translateX(-4vw);
+        opacity: 0;}
+    50% {transform: translateX(0vw);
+        opacity: 1;}
+    100% {transform: translateX(4vh);
+        opacity: 0;}
+
+}
