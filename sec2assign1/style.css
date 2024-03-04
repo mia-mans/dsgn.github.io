@@ -1,11 +1,3 @@
-
-#contentwrapper{
-    height: 100vh;
-    width:102vw;
-    margin-top: -2vh;
-    margin-left: -2vh;
-}
-
 /* --------------------------- */
 /* ---------NIGHT MODE-------- */
 /* --------------------------- */
@@ -35,6 +27,19 @@
 
 #lightmode:target{
     opacity:1;
+}
+
+#bottomclouds{
+    position:absolute;
+    height: 100vh;
+    width:102vw;
+    background-color: beige;
+    animation: cloudscroll 5s infinite;
+}
+
+#bottomclouds img{
+    width: 10%;
+    animation: cloudscroll 20s infinite;
 }
 
 /* --------------------------- */
@@ -98,14 +103,29 @@
     opacity:0;
 }
 
-#animationmode{
+#wordmode{
     position: absolute;
     top: 1vh;
-    right: 1vw;
+    right:31vw;
     width: 10vw;
     height: 10vh;  
-    background-color: purple;
 }
+#wordmode img{
+
+}
+
+#wordmodeslash{
+    position: absolute;
+    top: 5.3vh;
+    right: 31vw;
+    transform: rotate(-45deg);
+    width: 8vw;
+    height: 0.4vh;
+    border-radius:20%;
+    background-color: white;  
+    opacity:0;
+}
+
 
 .icon img{
     width: 100%
@@ -124,11 +144,39 @@ input{
 
 }
 
+#wordtoggle:checked ~ #wordmodeslash{
+    opacity: 1;
 
+}
 
-/* input {
-    display: none;
-  } */
+#wordtoggle:checked ~ #sentence0{
+    opacity: 0;
+    animation: hide 10s infinite;
+}
+#wordtoggle:checked ~ #sentence1{
+    opacity: 0;
+    animation: hide 10s infinite;
+}
+#wordtoggle:checked ~ #sentence2{
+    opacity: 0;
+    animation: hide 10s infinite;
+}
+#wordtoggle:checked ~ #sentence3{
+    opacity: 0;
+    animation: hide 10s infinite;
+}
+#wordtoggle:checked ~ #sentence4{
+    opacity: 0;
+    animation: hide 10s infinite;
+}
+#wordtoggle:checked ~ #sentence5{
+    opacity: 0;
+    animation: hide 10s infinite;
+}
+#wordtoggle:checked ~ #sentence6{
+    opacity: 0;
+    animation: hide 10s infinite;
+}
 
 /* --------------------------- */
 /* ------------TEXT----------- */
@@ -151,42 +199,129 @@ input{
     color:white;
 }
 
-.sentences_fast{
+.sentencesfast{
     font-size: 5vw;
     font-weight: 200;
     color:white;
-    animation: drift 3s infinite;
-    animation-delay: 250ms;
+    animation: driftright 5s infinite;
+    opacity: 0;
 }
 
-.sentences_med{
+.sentencesmed{
     font-size: 5vw;
     font-weight: 200;
     color:white;
-    animation: drift 4s infinite;
-    animation-delay: ms;
+    animation: driftright 7s infinite;
+    opacity: 0;
 }
 
 
-.sentences_slow{
+.sentencesslow{
     font-size: 5vw;
     font-weight: 200;
     color:white;
-    animation: drift 5s infinite;
+    opacity: 0;
+    animation: driftleft 8s infinite;
+    
+}
+
+#sentence0{
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    width: 50vw;
+    height: 10vh; 
     animation-delay: 500ms;
+
 }
+
+#sentence1{
+    position: absolute;
+    top: 10vh;
+    left: 60vw;
+    width: 50vw;
+    height: 10vh; 
+    animation-delay: 2s;
+}
+
+#sentence2{
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    width: 50vw;
+    height: 10vh; 
+    animation-delay: 50ms;
+}
+
+#sentence3{
+    position: absolute;
+    top: 52vh;
+    left: 5vw;
+    width: 50vw;
+    height: 10vh; 
+    animation-delay: 150ms;
+}
+
+
+#sentence4{
+    position: absolute;
+    top: 60vh;
+    left: 70vw;
+    width: 50vw;
+    height: 10vh; 
+    animation-delay: 3s;
+}
+
+
+#sentence5{
+    position: absolute;
+    top: 75vh;
+    left: 20vw;
+    width: 50vw;
+    height: 10vh; 
+    animation-delay: 1s;
+}
+
+#sentence6{
+    position: absolute;
+    top: 85vh;
+    left: 60vw;
+    width: 50vw;
+    height: 10vh; 
+}
+
+
+
+/* --------------------------- */
+/* ---------ANIMATIONS-------- */
+/* --------------------------- */
 
 @keyframes wobble {
     0%, 100%  {transform: translateY(-1vh)}
     50%  {transform: translateY(1vh)}
   }
 
-@keyframes drift{
-    0% {transform: translateX(-4vw);
+@keyframes driftright{
+    0% {transform: translateX(-10vw);
         opacity: 0;}
-    50% {transform: translateX(0vw);
-        opacity: 1;}
-    100% {transform: translateX(4vh);
+    50% {opacity: 0.8;}
+    100% {transform: translateX(10vh);
         opacity: 0;}
+}
 
+@keyframes driftleft{
+    0% {transform: translateX(10vw);
+        opacity: 0;}
+    50% {opacity: 0.8;}
+    100% {transform: translateX(-10vh);
+        opacity: 0;}
+}
+
+@keyframes cloudscroll{
+    from{left: 0vw;}
+    to{left: 200vw;}
+}
+
+@keyframes hide{
+    0%, 100%{opacity:0;}
 }
