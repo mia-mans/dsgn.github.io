@@ -211,17 +211,24 @@ td img{
 #girl img{
     width: 100%;
 }
+#girl:hover{
+    animation: bounce 15s; 
+}
 
 #heirloom1{
     position: fixed;
-    z-index: 0;
-    height: 10vh;
+    z-index: 19;
+    height: 22  vh;
     width:20vw;
-    bottom:30vh;
+    bottom:15vh;
     left: 0vw;
 }
 #heirloom1 img{
     width: 100%;
+}
+#heirloom1:hover{
+    animation: spin 1.5s linear infinite;
+    transform-origin: center;
 }
 
 #heirloom2{
@@ -239,18 +246,22 @@ td img{
 #slice{
     position: fixed;
     z-index: 0;
-    height: 10vh;
+    height: 33vh;
     width:30vw;
-    top:0vh;
-    right: 0vw;
+    top:-5vh;
+    right: -8vw;
 }
 #slice img{
     width: 100%;
 }
+#slice:hover{
+    animation: spin 1.5s linear infinite;
+    transform-origin: center;
+}
 
 #stack{
     position: fixed;
-    z-index: 0;
+    z-index: 5;
     height: 20vh;
     width:10vw;
     top:58vh;
@@ -272,4 +283,80 @@ td img{
 }
 #hand img{
     width: 100%;
+}
+
+#smallstar{
+    position: fixed;
+    z-index: 18;
+    height: 50vh;
+    width:30vw;
+    bottom:20vh;
+    left: -1vw;
+}
+#smallstar img{
+    width: 100%;
+}
+
+#bigstar{
+    position: fixed;
+    z-index: 0;
+    height: 50vh;
+    width:35vw;
+    bottom:5vh;
+    left: 60vw;
+    transform:rotate(180deg);
+}
+#bigstar img{
+    width: 100%;
+}
+
+#smallspike{
+    position: fixed;
+    z-index: 18;
+    height: 30vh;
+    width:20vw;
+    bottom:35vh;
+    right: 0vw;
+    transform:rotate(-50deg)
+}
+#smallspike img{
+    width: 100%;
+}
+
+#bigspike{
+    position: fixed;
+    z-index: 18;
+    height: 30vh;
+    width:18vw;
+    top:-15vh;
+    left:55vw;
+    transform:rotate(130deg)
+}
+#bigspike img{
+    width: 100%;
+}
+
+#bigspikelower{
+    position: fixed;
+    z-index: 18;
+    height: 30vh;
+    width:18vw;
+    top:65vh;
+    left:25vw;
+    transform:rotate(-50deg)
+}
+#bigspikelower img{
+    width: 100%;
+}
+
+
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes bounce{
+    0% { scale: 1; }
+    10% {scale: 1.4;}
+    100% { scale: 1.4; }
 }
