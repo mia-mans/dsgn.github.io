@@ -77,9 +77,6 @@ td img{
     .baked {
         display:None;
     }
-    #bigspikelower{
-        display:None;
-    }
     td {
         width: calc(80vw / 3);
         /* width: calc(20%); */
@@ -337,7 +334,7 @@ td img{
     width:20vw;
     bottom:35vh;
     right: 0vw;
-    transform:rotate(-50deg)
+    transform:rotate(-50deg);
 }
 #smallspike img{
     width: 100%;
@@ -350,7 +347,7 @@ td img{
     width:18vw;
     top:-5vh;
     left:55vw;
-    transform:rotate(130deg)
+    transform:rotate(130deg);
 }
 #bigspike img{
     width: 100%;
@@ -358,17 +355,20 @@ td img{
 
 #bigspikelower{
     position: fixed;
-    z-index: 18;
+    z-index: 10;
     height: 30vh;
-    width:18vw;
-    top:65vh;
+    width:15vw;
+    top:75vh;
     left:25vw;
-    transform:rotate(-50deg)
+    transform:rotate(-50deg);
 }
 #bigspikelower img{
     width: 100%;
 }
 
+/* ---------------------------- */
+/* --ANIMATIONS & ADJUSTMENTS-- */
+/* ---------------------------- */
 
 @keyframes spin{
     0% { transform: rotate(0deg); }
@@ -380,3 +380,16 @@ td img{
     10% {scale: 1.4;}
     100% { scale: 1.4; }
 }
+
+@media only screen and (min-aspect-ratio: 1.5/1){
+    #bigspikelower{
+        display:None;
+    }
+  }
+
+  @media only screen and (max-aspect-ratio: 6/5){
+    #bigspike{
+        display: None;
+    }
+
+  }
