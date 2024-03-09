@@ -1,0 +1,184 @@
+
+/* --------------------------- */
+/* ---------TITLE TEXT-------- */
+/* --------------------------- */
+
+h2 {
+    position: fixed;
+    top: -10vh;
+    left: 5vh;
+    width: 50vw;
+    font-size: 10vh;
+    font-family: 'Rock 3D', sans-serif;
+    z-index: 10;
+}
+
+h1 {
+    position: fixed;
+    top: -5vh;
+    left: 4vh;
+    width: 50vw;
+    height: 10vh;  
+    font-size: 12vh;
+    font-family: 'Rock 3D', sans-serif;
+    z-index: 10;
+}
+
+h1 span:nth-child(1) { color: #ff0000; }
+h1 span:nth-child(2) { color: blue; }
+h1 span:nth-child(3) { color: #139102;}
+h1 span:nth-child(4) { color: red;}
+h1 span:nth-child(5) { color: blue;}
+h1 span:nth-child(6) { color: red; }
+h1 span:nth-child(7) { color: #139102; }
+h1 span:nth-child(8) { color: blue; }
+h1 span:nth-child(9) { color: red; }
+
+/* --------------------------- */
+/* ---------PAGE WRAP--------- */
+/* --------------------------- */
+.wrapper{
+    width:100vw;
+    height:80vh;
+    overflow:hidden;
+}
+
+/* --------------------------- */
+/* ---------IMAGE GRID-------- */
+/* --------------------------- */
+.mainimage {
+    position:absolute;
+    top:18vh;
+    left: calc((100vw - 55vw - 2 * 3vw)/ 2);
+    z-index: 5;
+}
+
+table{
+    border-spacing: 3vw;
+}
+
+td {
+    width: calc(55vw / 3);
+    height: calc(70vh / 3);
+    text-align: center;
+    overflow:hidden;
+
+  }
+
+td img{
+    width: 100%;
+}
+
+/* --------------------------- */
+/* --------RECIPE CARDS------- */
+/* --------------------------- */
+#pastacard{
+    background-image: url('images/card.png');
+    opacity: 0;
+    z-index:0;
+}
+
+#pastacard:target{
+    opacity:1;
+    z-index:20;
+}
+
+#pastacard:target > #exit{
+    opacity:1;
+}
+
+#exit{
+    position:absolute;
+    height:5vh;
+    width:5vw;
+    bottom:45vh;
+    right:0vw;
+    opacity:0;
+
+}
+#exit a{
+    font-size: 6vh;
+    color:rgb(117, 132, 101);
+    position:relative;
+    font-family: sans-serif;
+    text-decoration: None;
+}
+
+.card{
+    position: absolute;
+    height: 50vh;
+    width: 80vw;
+    bottom:20vh;
+    right:10vw;
+    background-size: 100%; 
+}
+
+.card h1{
+    position: relative;
+    font-family: 'Rock 3D', serif;
+    margin-left:1vw;
+    margin-top:5vh;
+    font-size:6vh;
+    color:rgb(59, 59, 59);
+}
+
+.card p{
+    position: relative;
+    font-family: 'Shadows into Light', serif;
+    margin-left: 4vw;
+    margin-top: -7vh;
+    font-size: 4vh;
+    line-height:4.7vh;
+    color:rgb(59, 59, 59);
+}
+
+/* --------------------------- */
+/* ---------BACKGROUND-------- */
+/* --------------------------- */
+#girl{
+    position: fixed;
+    z-index: 15;
+    height: 10vh;
+    width:20vw;
+    bottom:40vh;
+    right: 25vw;
+}
+#girl img{
+    width: 100%;
+}
+
+#heirloom1{
+    position: fixed;
+    z-index: 0;
+    height: 10vh;
+    width:20vw;
+    bottom:40vh;
+    left: 0vw;
+}
+#heirloom1 img{
+    width: 100%;
+}
+
+#heirloom2{
+    position: fixed;
+    z-index: 0;
+    height: 10vh;
+    width:20vw;
+    bottom:40vh;
+    left: 0vw;
+}
+#heirloom2 img{
+    width: 100%;
+}
+
+#slice{
+    position: fixed;
+    z-index: 0;
+    height: 10vh;
+    width:30vw;
+    top:0vh;
+    right: 0vw;
+}
+#slice img{
+    width: 100%;
+}

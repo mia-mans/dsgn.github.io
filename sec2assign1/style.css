@@ -251,6 +251,7 @@ input{
     width: 50vw;
     height: 10vh; 
     animation-delay: 50ms;
+    font-size: 4.5vw;
 }
 
 #sentence3{
@@ -260,6 +261,7 @@ input{
     width: 50vw;
     height: 10vh; 
     animation-delay: 150ms;
+    font-size: 5vw;
 }
 
 
@@ -288,6 +290,7 @@ input{
     left: 60vw;
     width: 50vw;
     height: 10vh; 
+    font-size: 4vw;
 }
 
 
