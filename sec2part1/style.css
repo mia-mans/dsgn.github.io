@@ -72,20 +72,6 @@ td img{
 /* --------------------------- */
 /* --------RECIPE CARDS------- */
 /* --------------------------- */
-#pastacard{
-    background-image: url('images/card.png');
-    opacity: 0;
-    z-index:0;
-}
-
-#pastacard:target{
-    opacity:1;
-    z-index:20;
-}
-
-#pastacard:target > #exit{
-    opacity:1;
-}
 
 #exit{
     position:absolute;
@@ -120,6 +106,7 @@ td img{
     margin-top:5vh;
     font-size:6vh;
     color:rgb(59, 59, 59);
+    white-space: nowrap;
 }
 
 .card p{
@@ -128,10 +115,87 @@ td img{
     margin-left: 4vw;
     margin-top: -7vh;
     font-size: 4vh;
-    line-height:4.7vh;
+    line-height:4.55vh;
     color:rgb(59, 59, 59);
 }
 
+#pastacard{
+    background-image: url('images/card.png');
+    opacity: 0;
+    z-index:0;
+}
+#pastacard:target{
+    opacity:1;
+    z-index:20;
+}
+#pastacard:target > #exit{
+    opacity:1;
+}
+
+#tartcard{
+    background-image: url('images/card.png');
+    opacity: 0;
+    z-index:0;
+}
+#tartcard:target{
+    opacity:1;
+    z-index:20;
+}
+#tartcard:target > #exit{
+    opacity:1;
+}
+
+#piecard{
+    background-image: url('images/card.png');
+    opacity: 0;
+    z-index:0;
+}
+#piecard:target{
+    opacity:1;
+    z-index:20;
+}
+#piecard:target > #exit{
+    opacity:1;
+}
+
+#soupcard{
+    background-image: url('images/card.png');
+    opacity: 0;
+    z-index:0;
+}
+#soupcard:target{
+    opacity:1;
+    z-index:20;
+}
+#soupcard:target > #exit{
+    opacity:1;
+}
+
+#capresecard{
+    background-image: url('images/card.png');
+    opacity: 0;
+    z-index:0;
+}
+#capresecard:target{
+    opacity:1;
+    z-index:20;
+}
+#capresecard:target > #exit{
+    opacity:1;
+}
+
+#bakedcard{
+    background-image: url('images/card.png');
+    opacity: 0;
+    z-index:0;
+}
+#bakedcard:target{
+    opacity:1;
+    z-index:20;
+}
+#bakedcard:target > #exit{
+    opacity:1;
+}
 /* --------------------------- */
 /* ---------BACKGROUND-------- */
 /* --------------------------- */
@@ -152,7 +216,7 @@ td img{
     z-index: 0;
     height: 10vh;
     width:20vw;
-    bottom:40vh;
+    bottom:30vh;
     left: 0vw;
 }
 #heirloom1 img{
@@ -163,9 +227,9 @@ td img{
     position: fixed;
     z-index: 0;
     height: 10vh;
-    width:20vw;
-    bottom:40vh;
-    left: 0vw;
+    width:15vw;
+    bottom:50vh;
+    left: 30vw;
 }
 #heirloom2 img{
     width: 100%;
@@ -180,5 +244,31 @@ td img{
     right: 0vw;
 }
 #slice img{
+    width: 100%;
+}
+
+#stack{
+    position: fixed;
+    z-index: 0;
+    height: 20vh;
+    width:10vw;
+    top:58vh;
+    right: 4.5vw;
+}
+#stack img{
+    width: 100%;
+    transform:scaleX(-1) rotate(10deg);
+}
+
+#hand{
+    position: fixed;
+    transform:rotate(90deg);
+    z-index: 0;
+    height: 20vh;
+    width:20vw;
+    bottom:60vh;
+    left: 5vw;
+}
+#hand img{
     width: 100%;
 }
