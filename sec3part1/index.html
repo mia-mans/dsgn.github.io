@@ -6,18 +6,59 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Play:wght@400;700&family=Rock+3D&family=Rubik+Mono+One&family=Shadows+Into+Light&family=Unica+One&family=Zeyada&display=swap')
         </style>
+        
     </head>
-<section>
-    hello!
-</section>
 
-<section id="instructions">
-    <form action="/sec3part1/input.php">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
-    </form> 
+    <body>
+    
+    <!--lets us do the form like this-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <div class="container">
+    <form id="contact" onsubmit="return postToGoogle();">
+      <fieldset>
+            <textarea placeholder="Leave a note to a stranger!"
+                   name="entry.1125248479"
+                   data-name="Message"
+                   id="Message"
+                   required>
+            </textarea>
+    </fieldset>
+    <fieldset>
+        <button type="submit" id="contact-submit">Submit</button>
+    </fieldset>
+    </form>
+  </div>
 
-</section>
+
+
+
+    <!--Sends the input to the google form-->
+<script>
+    function postToGoogle() {
+      var field1 = $("#Message").val();
+
+      $.ajax({
+        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdsLac8IaPsLi4NiIVjlg4PzXubvX0vnEVZSh3JrKZZxPZqmg/formResponse",
+          
+       
+        data: {
+          "entry.1125248479": field1,
+        },
+        type: "POST",
+        dataType: "xml",
+        success: function (d) {
+          $('#contact').trigger('reset');
+        },
+        error: function (x, y, z) {
+          $('#contact').trigger('reset');
+        }
+      });
+      return false;
+    }
+  </script>
+
+    <!-- responses: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdsLac8IaPsLi4NiIVjlg4PzXubvX0vnEVZSh3JrKZZxPZqmg/formResponse -->
+    <!-- form question number: 1125248479-->
+
+</body>
