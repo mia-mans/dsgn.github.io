@@ -34,32 +34,10 @@
 
 
     <!--Sends the input to the google form-->
-<script>
-    function postToGoogle() {
-      var field1 = $("#Message").val();
-
-      $.ajax({
-        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdsLac8IaPsLi4NiIVjlg4PzXubvX0vnEVZSh3JrKZZxPZqmg/formResponse",
-          
-       
-        data: {
-          "entry.1125248479": field1,
-        },
-        type: "POST",
-        dataType: "xml",
-        success: function (d) {
-          $('#contact').trigger('reset');
-        },
-        error: function (x, y, z) {
-          $('#contact').trigger('reset');
-        }
-      });
-      return false;
-    }
-  </script>
-
+<script src="googlepost.js"></script>
+<div>
   <iframe frameborder="0" allowtransparency="true"
-  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTnHxZG2bEhI2QVJqNsXPNdW6_5-v27yeyZDOA0iqgO7vOHTlUOnqHE2clKJQvw4vEdG9gH40X9QNdX/pubhtml?gid=2407957&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-  
+  src="https://docs.google.com/spreadsheets/d/1IUga9eTb2WBsDgjNIUycdQzlG5n3zHHgWcrQ0PyYax4/edit?usp=sharing"></iframe>
+</div>
   <script src="iframeparser.js"></script>
 </body>
