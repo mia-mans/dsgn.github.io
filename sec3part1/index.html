@@ -14,10 +14,11 @@
     <!--lets us do the form like this-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
-    <div class="container">
-    <form id="contact" onsubmit="return postToGoogle();">
+    <div class="form-wrapper">
+    <form id="kindness" onsubmit="return postToGoogle();">
       <fieldset>
             <textarea placeholder="Leave a note to a stranger!"
+                   type="text"
                    name="entry.1125248479"
                    data-name="Message"
                    id="Message"
@@ -25,7 +26,7 @@
             </textarea>
     </fieldset>
     <fieldset>
-        <button type="submit" id="contact-submit">Submit</button>
+        <button type="submit" id="kindness-submit">Submit</button>
     </fieldset>
     </form>
   </div>
@@ -33,11 +34,9 @@
 
 
 
-    <!--Sends the input to the google form-->
+<!--Sends the input to the google form-->
 <script src="googlepost.js"></script>
-<!-- <div> -->
   <iframe 
   src="https://docs.google.com/spreadsheets/d/1IUga9eTb2WBsDgjNIUycdQzlG5n3zHHgWcrQ0PyYax4/edit?usp=sharing"></iframe>
-<!-- </div> -->
   <script src="iframeparser.js"></script>
 </body>
