@@ -11,6 +11,10 @@
     padding-right: 1vw !important;
   } */
 
+  .embedded-doc{
+    color:blue;
+  }
+
   #iframewrapper iframe {
     width: 100%;
     height: 100vh;
