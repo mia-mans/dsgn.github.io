@@ -1,0 +1,14 @@
+
+  #docs-chrome{
+    display: none;      
+
+  }
+
+  td:not(.s0) {
+    display: none !important;
+  }
+
+  th {
+    display: none;
+  }
+
