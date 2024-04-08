@@ -24,7 +24,7 @@ fieldset {
   width: 100%;
   height: 40vw;
   border: none;
-  border-radius: 5%;
+  border-radius: 7px;
   background: #afbed1;
   font-family: 'Quicksand', sans-serif;
   padding: 10px;
@@ -37,7 +37,7 @@ fieldset {
 #kindness button[type="submit"]{
   cursor: pointer;
   border: none;
-  border-radius: 5%;
+  border-radius: 7px;
   background: #eac5d8;
   color: #000000;
   width: 50%;
@@ -53,8 +53,8 @@ fieldset {
 /* --------------------------- */
 #instructions{
   width:40vw;
-  height:30vh;
-  margin-top: -33vw;
+  height:25vw;
+  margin-top: -32vw;
   margin-left:3vw;
   background-color: #eac5d8;
   border-radius: 5%;
@@ -62,7 +62,8 @@ fieldset {
 }
 
 .textwrapper{
-  margin-top:3vw;
+  padding-top: 3vw;
+  padding-right: 1vw;
   margin-left: 1vw;
   font-size: 15px;
   font-family: 'Quicksand', sans-serif;
@@ -84,18 +85,49 @@ fieldset {
 
 #outputwrapper{
   margin-top:0vw;
+  margin-left:3vw;
 }
 
 /* hide toolbar */
   #docs-chrome{
     display: none;      
+  }
 
+  #output-header{
+    margin-top:3vw;
+    margin-left: 3vw;
+    font-size: 23px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    background-color: #afbed1;
+    width: 37vw;
+    height:7vw;
+    margin-left:3vw;
+    border-radius: 7px;
+  }
+  #output-header p{
+    padding-top: 1vw;
+    margin-left: 2vw;
   }
 
 /* hide columns that aren't from the answers */
   td:is(.s1) {
     display: none !important;
+  }
+
+  td{
+    margin: 3vw;
     background-color: #efe8e7 !important;
+    /* font changing isn't working */
+    font-family: 'Times New Roman', Times, serif, !important;
+  }
+
+/* this styping isn't working! I want to be able to style each
+ row independently but it isn't happy abt that */
+
+  tr:nth-child(4){
+    margin: 3vw;
+    background-color: #c3c4d9 !important;
   }
 
  /* hide line headers */
