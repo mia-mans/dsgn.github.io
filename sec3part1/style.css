@@ -5,6 +5,10 @@
 .form-wrapper {
   width: 50vw;
   height: 30vw;
+  margin-left: 43vw;
+}
+body{
+  background-color: #efe8e7;
 }
 
 /* get rid of random box around box for submission */
@@ -18,11 +22,16 @@ fieldset {
 
 #kindness textarea[type="text"] {
   width: 100%;
-  height: 10vw;
+  height: 40vw;
   border: none;
   border-radius: 5%;
   background: #afbed1;
+  font-family: 'Quicksand', sans-serif;
   padding: 10px;
+}
+
+#kindness textarea[type="text"]:focus{
+  outline: 2px solid #7c93ac;     /* oranges! yey */
 }
 
 #kindness button[type="submit"]{
@@ -31,14 +40,51 @@ fieldset {
   border-radius: 5%;
   background: #eac5d8;
   color: #000000;
-  width: 100%;
+  width: 50%;
   padding: 10px;
+  margin-left: 25vw;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+/* --------------------------- */
+/* -------INSTRUCTIONS-------- */
+/* --------------------------- */
+#instructions{
+  width:40vw;
+  height:30vh;
+  margin-top: -33vw;
+  margin-left:3vw;
+  background-color: #eac5d8;
+  border-radius: 5%;
+  text-align:left;
+}
+
+.textwrapper{
+  margin-top:3vw;
+  margin-left: 1vw;
   font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+#girl img{
+  width:100%;
+}
+
+#girl{
+  width:40vw;
+  margin-left: 4vw;
 }
 
 /* --------------------------- */
 /* ----PREV ANSWER STYLING---- */
 /* --------------------------- */
+
+#outputwrapper{
+  margin-top:0vw;
+}
 
 /* hide toolbar */
   #docs-chrome{
@@ -47,11 +93,12 @@ fieldset {
   }
 
 /* hide columns that aren't from the answers */
-  td:not(.s0) {
+  td:is(.s1) {
     display: none !important;
+    background-color: #efe8e7 !important;
   }
 
-/* hide line headers */
+ /* hide line headers */
   th {
     display: none;
   }
