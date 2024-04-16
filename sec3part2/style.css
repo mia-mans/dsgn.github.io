@@ -24,9 +24,9 @@
     width: 100%;
 }
 
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 #intro{
     width: 100vw;
@@ -236,7 +236,7 @@ td p{
     h1{
         font-size: 4vw;
     }
-    
+
      /* smoosh second page */
     .info-box{
         height:12vw;
