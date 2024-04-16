@@ -66,7 +66,7 @@ h1{
 
 }
 
-.info-box h2{
+h3{
     text-align: center;
     font-size:3vw;
     font-style: italic;
@@ -75,7 +75,7 @@ h1{
     margin: 2vw;
 }
 
-.info-box p{
+p{
     text-align: center;
     font-size: 2vw;
     margin: 2vw;
@@ -139,6 +139,61 @@ h1{
     margin:0;
 }
 
+#heading{
+    position:absolute;
+    width:50vw;
+    height:20vw;
+    margin-top: calc(0.05*100vh);
+    margin-left: calc(50vw - 0.5*50vw);
+    text-align: center;
+    /* background-color: red; */
+}
+
+h2{
+    text-align: center;
+    font-size:3vw;
+    font-style: italic;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 1vw;
+}
+
+#heading p{
+    font-weight: 550;
+}
+
+#phone-block{
+    position:absolute;
+    width: 30vh;
+    height: 50vh;
+    margin-top: calc(0.05*100vh + 15vw);
+}
+
+
+/* i should use a table instead */
+
+td {
+    width: calc(55vw / 3);
+    /* width: calc(20%); */
+    height: calc(70vh / 3);
+    text-align: center;
+    overflow:hidden;
+  }
+
+.left{
+    margin-left: calc(15vh);
+    background-color: red;
+}
+
+.center{
+    margin-left: calc(2*(100vh / 3) + 15vh);
+    background-color: blue;
+}
+
+.right{
+    margin-left: calc((100vh / 3) + 15vh);
+    background-color: bisque;
+}
 
 /* ------------------------------------ */
 /* --------------Last Page------------- */
@@ -149,6 +204,8 @@ h1{
     background-color: aquamarine;
     margin:0;
 }
+
+
 
 
 
@@ -195,6 +252,10 @@ h1{
 
     .learn-more a{
         font-size: 2vw;
+    }
+
+    #heading{
+        display:none;
     }
 }
 
