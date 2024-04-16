@@ -8,6 +8,7 @@
     height:100vh;
     background-image: url('images/taylor-fans.jpg');
     background-position: center center; 
+    background-size:cover;
     margin:0;
     margin-top: -1vw;
     margin-left:-1vw;
