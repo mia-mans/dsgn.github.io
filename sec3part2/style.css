@@ -1,47 +1,148 @@
 
 /* ------------------------------------ */
-/* -------------Top Section------------ */
+/* ---------------Top Page------------- */
 /* ------------------------------------ */
+#cover{
+    position:relative;
+    width: 100vw;
+    height:100vh;
+    background-image: url('images/taylor-fans.jpg');
+    background-position: center center; 
+    margin:0;
+    margin-top: -1vw;
+    margin-left:-1vw;
+}
+#scroll{
+    position:absolute;
+    margin-left: 45vw;
+    width:10vw;
+    margin-top: 70vh;
+    z-index: 10;
+    color:white;
+}
+#scroll img{
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 #intro{
     width: 100vw;
     height:100vh;
-    background-color: aquamarine;
-    margin:0;
+    background-image: url('images/light-gradient.jpeg');
+    background-size:180%;
+    background-repeat: no-repeat;
+    margin-top:0vh;
 }
 
 h1{
     position:absolute;
-    width:60vw;
-    margin-top: calc(0.1*100vh);
-    margin-left: 20vw;
+    width:80vw;
+    margin-top: calc(0.2*100vh);
+    margin-left: 10vw;
     text-align: center;
-    font-size: 4vw;
+    font-style: italic;
+    font-size: 7vw;
     font-family: 'Open Sans', sans-serif;
+    color:white;
 }
+
+/* ------------------------------------ */
+/* -------------Middle Page------------ */
+/* ------------------------------------ */
 
 .info-box{
     position:absolute;
-    width:40vw;
-    margin-left:calc(25vw - 0.5*40vw);
-    margin-top: calc(0.5*100vh);
+    width:45vw;
+    height:30vw;
+    margin-left:calc(28vw - 0.5*45vw);
+    margin-top: calc(0.1*100vh);
+    background-image: url('images/purple-box.png');
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center center; 
+
 }
 
 .info-box h2{
     text-align: center;
-    font-size:2vw;
+    font-size:3vw;
     font-style: italic;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 2vw;
 }
 
 .info-box p{
     text-align: center;
-    font-size:1vw;
+    font-size: 2vw;
+    margin: 2vw;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
 }
 
-#connect{
-
+.phone-img{
+    position:absolute;
+    width: 30vw;
+    height: 30vw;
+    margin-left: calc(78vw - 0.5*35vw);
+    margin-top: calc(0.05*100vh);
 }
 
+.phone-img img{
+    width:100%;
+}
+
+.connect{
+    position:absolute;
+    width: 30vw;
+    height: 30vw;
+    margin-left: calc(78vw - 0.5*35vw);
+    margin-top: calc(0.05*100vh + 30vw);
+}
+
+.connect img{
+    width:100%;
+}
+
+.learn-more{
+    position:absolute;
+    width: 40vw;
+    height: 6vw;
+    margin-top: calc(0.1*100vh + 35vw);
+    margin-left: 30vw;
+    background-color: #7E08F7;
+    border-radius: 5vw;
+    text-align: center;
+}
+
+.learn-more a{
+    font-size: 4vw;
+    font-weight:700;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    font-style: italic;
+    text-decoration: none;
+}
+
+/* ------------------------------------ */
+/* -------------Third Page------------- */
+/* ------------------------------------ */
+#examples{
+    width: 100vw;
+    height:100vh;
+    background-image: url('images/dark-gradient.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+}
+
+
+/* ------------------------------------ */
+/* --------------Last Page------------- */
+/* ------------------------------------ */
 #contact{
     width: 100vw;
     height:100vh;
@@ -49,3 +150,86 @@ h1{
     margin:0;
 }
 
+
+
+
+/* ------------------------------------ */
+/* -------------Wide Screen------------ */
+/* ------------------------------------ */
+@media only screen and (min-aspect-ratio: 2.1/1){
+    /* keep top text from overlapping w autoscroll button */
+    h1{
+        font-size: 4vw;
+    }
+
+     /* smoosh second page */
+    .info-box{
+        height:15vw;
+        border-radius: 3vw;
+    }
+    .info-box h2{
+        font-size:2vw;
+        margin: 1vw;
+    }
+    .info-box p{
+        font-size: 1.5vw;
+        margin: 1vw;
+    }
+
+    .phone-img{
+        position:absolute;
+        width: 15vw;
+        height: 15vw;
+    }
+    .connect{
+        width: 15vw;
+        height: 2.5vw;
+        margin-top: calc(0.05*100vh + 15vw);
+    }
+    .learn-more{
+        width:20vw;
+        height: 3vw;
+        margin-left:calc(50vw - 0.5*20vw);
+        margin-top: calc(0.05*100vh + 15vw + 4vw);
+    }
+
+    .learn-more a{
+        font-size: 2vw;
+    }
+}
+
+
+/* ------------------------------------ */
+/* ------------Narrow Screen----------- */
+/* ------------------------------------ */
+@media only screen and (max-aspect-ratio: 1/1){
+    #intro{
+        background-size: 300%;
+    }
+
+
+    /* make the second page stack */
+    .info-box{
+        margin-left:calc(50vw - 0.5*45vw);
+        margin-top: calc(0.10*100vh);
+    
+    }
+
+    .phone-img{
+        margin-left: calc(50vw - 0.5*30vw);
+        margin-top: calc(0.15*100vh + 30vw);
+    }
+
+    .connect{
+        position:absolute;
+        margin-left: calc(50vw - 0.5*30vw);
+        margin-top: calc(0.15*100vh + 30vw + 30vw);
+    }
+
+
+    .learn-more{
+        margin-top: calc(0.15*100vh + 70vw);
+        margin-left: 30vw;
+    }
+    
+}
