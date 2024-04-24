@@ -1,8 +1,28 @@
 body {
     margin: 0;
+    background-color: #fbf8ef;
 }
 
-p {
+.background{
+    width: 100vw;
+    pointer-events: none;
+    height: 100vh;
+}
+
+.background img{
+    width: 80%;
+    margin-left: calc((100vw - 80vw)/2);
+    margin-top: -3vw;
+    pointer-events: none;
+}
+.page-wrapper {
+    width: 100vw;
+    margin-top: -100vh;
+}
+
+.page-title {
+    position: absolute;
     font-family: customfont, sans-serif;
-    font-size: 10vw;
+    font-size: 5vw;
+    margin-left: calc(10vw + 8vw);
 }
