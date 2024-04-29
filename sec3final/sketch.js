@@ -2,8 +2,10 @@ let resetbutton;
 
 function setup() {
   
-  createCanvas(windowWidth, windowHeight);
-  
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.parent("cover");
+  cover
+
 //   load background image
   bg = loadImage('images/yard.jpg');
   
@@ -20,14 +22,29 @@ function setup() {
   possumpic = loadImage('images/10.png');
   imgarray = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
+
+ 
+
 //   load leaf image
   leaf = loadImage('images/leaf.png');
 }
 
 function draw() {
   background(bg);
+
+  saveButton = createButton("save image");
+  saveButton.class("button");
+  saveButton.id("save");
+//   saveButton.center('horizontal');
+//   saveButton.style("font-size", "22px");
+  saveButton.mousePressed(saveIMG);
+
   noLoop();
 }
+
+function saveIMG() {
+    save("cover.png");
+  }
 
 function mouseClicked() {
 //   random image position
