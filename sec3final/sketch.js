@@ -32,7 +32,7 @@ function setup() {
 function draw() {
   background(bg);
 
-  saveButton = createButton("save image");
+  saveButton = createButton("photograph garden");
   saveButton.class("button");
   saveButton.id("save");
 //   saveButton.center('horizontal');
@@ -43,7 +43,7 @@ function draw() {
 }
 
 function saveIMG() {
-    save("cover.png");
+    save("garden.png");
   }
 
 function mouseClicked() {
