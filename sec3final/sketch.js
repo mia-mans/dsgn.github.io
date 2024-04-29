@@ -86,7 +86,7 @@ function possumsetup(){
   background(bg);
   y_possum = 3*windowHeight/4;
   movepossum();
-  setTimeout(makebutt, 1500);
+  setTimeout(makebutt, 3000);
   
 }
 
@@ -129,5 +129,5 @@ function resetdrawing(){
   clear();
   background(bg);
   resetbutton.remove();
-  
+  background(bg);
 }
