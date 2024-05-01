@@ -1,0 +1,107 @@
+body {
+    margin:0;
+}
+
+p{
+    font-family: customfont, sans-serif;
+}
+
+/* --------------------------- */
+/* --------backgrounds-------- */
+/* --------------------------- */
+
+.leftpage{
+    position:absolute;
+    width:50vw;
+    height:100vh;
+    background-image: url('images/left.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.rightpage{
+    position:absolute;
+    width:50vw;
+    height:100vh;
+    margin-left: 50vw;
+    background-image: url('images/right.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* --------------------------- */
+/* -------content tables------ */
+/* --------------------------- */
+.backtable {
+    max-width: 60vw;
+    margin-left: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.backtable div {
+    display: flex;
+    width: 10vw;
+    height: 10vw;
+    /* border: 1px solid #000000; */
+    align-items: left;
+    justify-content: left;
+    align-self: end;
+}
+
+.backtable .titlestyle{
+    width: 40vw;
+    height: 20vh;
+    font-size: calc(0.5*20vh);
+    color:#484d59;
+    margin-top: calc(-0.4*15vh);
+    vertical-align: top;
+    text-align: left;
+  }
+
+.backtable .assignment{
+    width:45vw;
+    height:38vh;
+    /* background-color: red; */
+    border: 2px solid #484d59;
+    margin: 2vh;
+}
+
+#s1a1-title{
+    background-color: #fef6b0;
+    position: relative;
+    margin-bottom: 30vh;
+    margin-left: -3vw;
+    width: 20vw;
+    height: 6vh;
+    transform: rotate(-15deg);
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+}
+
+#s1a1-title p {
+    padding-left: 1vw;
+    font-size: calc(0.7*6vh);
+    align-self: center;
+    text-align: center;
+    color:#484d59;
+}
+
+.backtable .assignment img{
+    width:100%;
+    height:100%;
+}
+
+.backtable .info{
+    width:10vw;
+    height:15vh;
+}
+
+.backtable .info img{
+    width:70%;
+    height: 70%;
+}
