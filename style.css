@@ -1122,8 +1122,296 @@ p {
 
 
 
+.leftarrow-read a img{
+    position: absolute;
+    width: 12vw;
+    height:12vw;
+    margin-left: 0vw;
+    margin-top: 87vh;
+    z-index: 3;
+    transform: rotate(180deg);
+    /* background-color: #484d59; */
+}
 
 
+#r1title{
+    background-color: #fef6b0;
+    position: absolute;
+    margin-bottom: 73vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 2.2vw;
+}
+#r1{
+    position: absolute;
+    margin-bottom: 58vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: left;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+}
 
 
+#r2title{
+    background-color: #fef6b0;
+    position: absolute;
+    margin-bottom: 41vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 2.2vw;
+}
+#r2{
+    position: absolute;
+    margin-bottom: 19vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: left;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+}
 
+#r3title{
+    background-color: #fef6b0;
+    position: absolute;
+    margin-bottom: 73vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 2.2vw;
+}
+#r3{
+    position: absolute;
+    margin-bottom: 60vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: left;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+}
+
+#r4title{
+    background-color: #fef6b0;
+    position: absolute;
+    margin-bottom: 46vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 2.2vw;
+}
+#r4{
+    position: absolute;
+    margin-bottom: 33vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: left;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+}
+
+#r5title{
+    background-color: #fef6b0;
+    position: absolute;
+    margin-bottom: 20vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 2.2vw;
+}
+#r5{
+    position: absolute;
+    margin-bottom: 8vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: left;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+}
+
+#r6title{
+    background-color: #fef6b0;
+    position: absolute;
+    margin-bottom: 73vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 2.2vw;
+}
+#r6{
+    position: absolute;
+    margin-bottom: 62vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: left;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 1.8vw;
+}
+
+#r7title{
+    background-color: #fef6b0;
+    position: absolute;
+    margin-bottom: 51vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 2.2vw;
+}
+#r7{
+    position: absolute;
+    margin-bottom: 37vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: left;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 1.7vw;
+}
+
+#r8title{
+    background-color: #fef6b0;
+    position: absolute;
+    margin-bottom: 73vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 2.2vw;
+}
+#r8{
+    position: absolute;
+    margin-bottom: 53vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: left;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 1.7vw;
+}
+
+#r9title{
+    background-color: #fef6b0;
+    position: absolute;
+    margin-bottom: 22vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 2.2vw;
+}
+#r9{
+    position: absolute;
+    margin-bottom: 10vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: left;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 1.7vw;
+}
+
+
+#r10title{
+    background-color: #fef6b0;
+    position: absolute;
+    margin-bottom: 30vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 2.4vw;
+}
+#r10{
+    position: absolute;
+    margin-bottom: 15vh;
+    margin-left: 1vw;
+    width: 40vw;
+    height: 6vh;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: left;
+    z-index: 1;
+    padding-left: 1vw;
+    font-size: 1.7vw;
+}
